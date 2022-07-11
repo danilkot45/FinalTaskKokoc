@@ -1,0 +1,37 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "Учусь работать с GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "serve": "cross-env NODE_ENV=development gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.webprofy.ru/kokoc-school/advanced-layout/2022_05/gulp_d.krasavtsev.git"
+  },
+  "author": "Даниил",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "browser-sync": "^2.27.10",
+    "del": "^6.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.52.1"
+  }
+}

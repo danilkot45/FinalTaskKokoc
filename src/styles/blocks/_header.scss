@@ -1,0 +1,353 @@
+.header {
+  display: flex;
+  position: relative;
+  
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  height: 698px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+
+  &__navigation{
+    display: flex;
+    flex-direction: row;
+    margin: 47px auto;
+  }
+
+  &-fon{
+    margin: 0 auto;
+    position: absolute;
+    width: 1188px;
+    height: 649px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background: url('../images/fon-header.svg');
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 442px 0 89px;
+    @media screen and (max-width: 1200px) {
+      margin: 12px 73px 0 101px;
+    }
+  }
+
+  &__btn-one {
+    text-align: center;
+    width: 137px;
+    height: 59px;
+    background: $mainColor;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: white;    
+    margin: -4px 0;
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+      color: $textColor;
+    }
+  }
+
+  &-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  &__blocks{
+    display: flex;
+  }
+
+  &__block-left {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 230px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin: 0;
+      align-items: center;
+    }
+  }
+
+  &__block-right {
+    display: flex;
+    flex-direction: row;
+    width: 598px;
+    height: 400px;
+    margin: -18px 0 0 40px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__service{
+    display: flex;
+    justify-content: space-evenly;
+    width: 792px;
+    height: 125px;
+    background: white;
+    box-shadow: 0px 1px $smallSize rgba(26, 10, 3, 0.05);
+    margin-left: 224px;
+    margin-top: $smallSize;
+    border-radius: 5px;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  @media screen and (max-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.text-up {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 139px;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-btn p {
+    width: 326px;
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $Size;
+    line-height: 160%;
+    color: $textColor;
+    opacity: 0.7;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (max-width: 360px) {
+      margin-top: 65px;     
+    }
+  }
+}
+
+.title{
+  display: flex;
+}
+
+.navig-link{
+  width: 57px;
+  height: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $Size;
+  line-height: 160%;
+  color: $textColor;
+  opacity: 0.7;
+  text-decoration: none;
+  padding-right: 40.5px;
+
+  &:hover {
+    color: $mainColor;
+    transition: 0.5s;
+  }
+}
+
+.text-logo{
+  width: 366px;
+  height: 216px;
+  font-family: 'Source Serif Pro', serif;
+  font-style: normal;
+  font-size: 61px;
+  line-height: 120%;
+  color: $textColor;
+  text-align: left;
+  margin-top: 12px;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.btn-slider{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.ramka{
+  display: flex;
+  box-sizing: border-box;
+  width: 394px;
+  height: 400px;
+  background-image: url('../images/fon-slider.png');
+  margin-top: 4px;
+}
+
+.brand{
+  display: flex;
+  flex-direction: column;
+  margin: 31px auto;
+
+  &-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 54px;
+  }
+
+  &-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $Size;
+    line-height: 160%;
+    color: $textColor;
+    opacity: 0.7;
+  }
+
+  &-btn{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    width: 128px;
+    height: 56px;
+    background: $mainColor;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $Size;
+    line-height: 160%;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    transition: 1s;
+    @media screen and (max-width: 567px) {
+      margin: 0 auto !important;      
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      transition: 1s;
+      color: $textColor;
+    }
+  }
+
+  &-choice{
+    display: flex;
+  }
+}
+
+.line{
+  display: flex;
+  height: 42px;
+  border-right: 1px solid $mainColor;
+  margin: 42px auto;
+  margin-left: 4px;
+}
+
+.select {
+  position: relative;
+  display: block;
+  min-width: 140px;
+  width: 100%;
+  max-width: 400px;
+
+  &__head {
+    width: 100%;
+    max-width: 100%;
+    padding: $smallSize 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: $textColor;
+
+    &::after {
+      width: 10px;
+      height: 6px;
+      background: white url('../images/strelka.svg') no-repeat center / cover;
+      position: absolute;
+      right: 22px;
+      bottom: 50%;
+      transform: translateY(50%);
+      content: '';
+      display: block;
+      transition: .2s ease-in;
+    }
+
+    &.open::after {
+      transform: translateY(50%) rotate(180deg);
+    }
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: -230%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 5px;
+    max-height: 205px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    font-size: $smallSize;
+    color: #424348;
+
+    & .select__item {
+      position: relative;
+      border-top: 1px solid rgba(224, 229, 231, 0.5);
+      padding: 10px 15px;
+      cursor: pointer;
+      list-style-type: none;
+
+      &:hover {
+        background-color: rgba(224, 229, 231, 0.5);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  nav{
+    display: none;
+  }
+  
+}

@@ -1,0 +1,8 @@
+include ../mixins/mainSlider
+include ../mixins/testimonialsBlock
+section.testimonials
+  .block-two-title(style="margin-left:15px")
+      h2(style="    margin-left: -14px; margin-bottom: 59px;") Testimonials
+  .testimonials__container
+    img.testimonials-img(style="margin-left:16px;" src="images/beg.png", alt="")
+    +sliderTestimonials(['images/face.png', 'Their services was best and friendly', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.', 'Abram Korsgaard','Athletic'],['images/face.png', 'Their services was best and friendly', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.', 'Abram Korsgaard','Athletic'])

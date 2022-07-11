@@ -1,0 +1,106 @@
+.container-two {
+  display: flex;
+  overflow: hidden;
+}
+
+.block {
+  display: flex;
+  margin: 203px 0;
+  max-width: 1370px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 9px;
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+    margin: 100px 0;
+  }
+
+  &__one-left {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 252px;
+    padding-left: 6px;
+
+    &-text {
+
+      h3{
+        width: 65px;
+        height: 30px;
+        font-family: 'Source Serif Pro', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: $mainColor;
+        margin-top: 3px;
+        }
+
+      h2{
+        width: 340px;
+        height: 114px;
+        font-family: 'Source Serif Pro', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 130%;
+        color: $textColor;
+        margin-top: 10px;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: auto;
+          font-size: 30px;
+        }
+        }
+
+      p{
+        width: 326px;
+        height: 78px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $Size;
+        line-height: 160%;
+        color: $textColor;
+        opacity: 0.7;
+        margin-top: 21px;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: auto;
+          font-size: $smallSize;
+        }
+        }
+    }
+  }
+
+  &__one-right {
+    display: flex;
+    flex-direction: column;
+    margin: -61px 0 0 214px;
+    position: relative;
+    @media screen and (max-width: 1200px) {
+      margin: 15px 0 0;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.playbtn{
+  border: 0;
+  background: transparent;
+  margin-top: -214px;
+  margin-left: -50px;
+  @media screen and (max-width: 480px) {
+    margin-top: -125px;
+    margin-left: -11px;
+    width: 100%;
+
+    & img{
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

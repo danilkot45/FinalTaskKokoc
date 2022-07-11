@@ -1,0 +1,11 @@
+mixin card(img, title, description)
+      .block-blocks-feature
+        .block-blocks-feature-photo
+          img.block-blocks-photo(src=img alt='')
+          .block-blocks-photo-fon
+        .block-blocks-feature-text
+          p.block-blocks-feature-text-title=title
+          p.block-blocks-feature-text-main=description
+          a.block-btn-download(href="#")
+            | Read more 
+            img(style="margin-left:5px;" src='../images/strelka-left.svg' alt='')

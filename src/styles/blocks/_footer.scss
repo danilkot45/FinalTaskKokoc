@@ -1,0 +1,191 @@
+.footer {
+  display: flex;
+  overflow: hidden;
+  background: rgba(238, 85, 20, 0.04);
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 102px 0 102px 2px;
+    @media screen and (max-width: 1040px) {
+      margin: 0;
+    }
+
+    &-up{
+      display: flex;
+      margin: 0 auto;
+
+      &-location{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -3px;
+       }
+
+      &-sersup{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+        margin-left: 78px;
+
+        & h5{
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $textColor;
+          margin-bottom: 31px;
+        }
+
+        & p{
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $textColor;
+          opacity: 0.7;
+          margin-bottom: 10px;
+        }
+        @media screen and (max-width: 712px) {
+          display: none;
+        }
+      }
+
+      &-contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+        margin-left: 125px;
+        @media screen and (max-width: 1040px) {
+          display: none;
+        }
+
+        & h5{
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $textColor;
+          margin-bottom: 31px;
+        }
+
+        & p{
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          color: $textColor;
+          opacity: 0.7;
+          margin-bottom: 38px;
+          width: 247px;
+          text-align: left;
+        }
+      }
+    }
+
+    &-down{
+      margin-top: 40px;
+      border-top: 1px solid #a6a4a4;
+
+      & p{
+        margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: $textColor;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &-logo{
+    margin-bottom: 23px;
+  }
+
+  &-adress{
+    width: 203px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: $textColor;
+    opacity: 0.7;
+    margin-left: 4px;
+  }
+
+  &-email{
+    margin-top: 4px;
+
+    & a{
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: $textColor;
+      opacity: 0.7;
+      text-decoration: none;
+    }
+  }
+
+  &-social{
+    margin-top: 6px;
+    margin-left: 1px;
+  }
+}
+
+.footer__forma{
+  display: flex;
+
+  &__input-email{
+    background: rgba(238, 85, 20, 0.01);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 224px;
+    height: 51px;
+
+    &::placeholder{
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      color: $textColor;
+      opacity: 0.6;
+      padding-left: 17px;
+    }
+  }
+
+  &__input-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 52px;
+    background: $mainColor;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    border: 0;
+  }
+}

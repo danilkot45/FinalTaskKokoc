@@ -1,0 +1,10 @@
+mixin gallary(photo, name,size,price)
+  img.slider-gallary-item__img(src=photo, alt="sneaker")
+  .slider-gallary-item__name=name
+  .slider-gallary-item__title
+    | Size:
+    span.slider-gallary-item__size=size
+  .slider-gallary-item__price
+    | Price:
+    span.slider-gallary-item__span=price
+        button.brand-btn(type='submit', data-bs-toggle='modal', data-bs-target='#exampleModal' style="margin:10px 0 0;") Buy now

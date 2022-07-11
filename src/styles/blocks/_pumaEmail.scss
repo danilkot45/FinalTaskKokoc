@@ -1,0 +1,117 @@
+.container-email {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.block-email {
+  display: flex;
+  width: 100%;
+  max-width: 1140px;
+  background: rgba(129, 168, 218, 0.1);
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+.puma{
+  &-photo{
+    width: 518px;
+    height: 334px;
+    background: url('../images/PumaEmail.png') no-repeat 100%;
+    filter: drop-shadow(0px 1px 30px rgba(26, 10, 3, 0.07));
+    border-radius: 10px;
+    z-index: 1;
+    @media screen and (max-width: 1100px) {
+      display: none;
+      }
+  }
+
+  &-text{
+    width: 526px;
+    height: 208px;
+    margin: 63px 33px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+
+    & h2{
+      font-family: 'Source Serif Pro', serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 31px;
+      line-height: 140%;
+      color: $textColor;
+      margin-bottom: 20px;
+    }
+
+    & p{
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: $textColor;
+      opacity: 0.7;
+    }
+  }
+
+  &-email{
+    margin-top: 35px;
+  }
+}
+
+
+.forma{
+  display: flex;
+
+  &__input-email{
+    background: rgba(129, 168, 218, 0.01);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 409px;
+    height: 51px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &::placeholder{
+      width: 174px;
+      height: 21px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: $textColor;
+      opacity: 0.5;
+      padding-left: 27px;
+    }
+  }
+
+  &__input-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 51px;
+    background: $mainColor;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    border: 0;
+    @media screen and (max-width: 480px) {
+      width: 50px;
+    }
+  }
+}
+
+.block-blocks-email {
+  display: flex;
+}

@@ -1,0 +1,90 @@
+block header 
+    header.header
+        .header-fon
+        .container-header
+            .header__navigation
+                .text-up
+                    .title
+                        img(src='/images/puma-logo.svg', alt)
+                    .header__nav
+                        .hamburger-menu
+                            input#menu__toggle(type='checkbox')
+                            label.menu-btn(for='menu__toggle')
+                                span
+                                    ul.menu-box
+                                        li
+                                        a.menu-item(href='#') Menu
+                                        li
+                                        a.menu-item(href='#') About
+                                        li
+                                        a.menu-item(href='#') Feature
+                                        li
+                                        a.menu-item(href='#') Gallary
+                        nav
+                            a.navig-link(href="#") Menu
+                            a.navig-link(href="#") About
+                            a.navig-link(href="#") Feature
+                            a.navig-link(href="#") Gallary
+                    .call
+                        button.header__btn-one(type='submit', data-bs-toggle='modal', data-bs-target='#exampleModal') Buy now
+            .header__blocks
+                .header__block-left
+                    .header-logo
+                        .text-logo
+                            | Life is better in running
+                            p(style='color:#EE5514;margin:0;') shoes
+                                b(style='color:black') .
+                    .text-up-btn
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Egestas leo ultrices
+                .header__block-right
+                    .ramka
+                        +slider('./images/sneaker1.png','./images/sneaker3.png')
+            .header__service
+                .brand
+                    .brand-title Brand
+                    .brand-choice
+                        .select
+                            input.select__input(type='hidden')
+                            .select__head Puma
+                            ul.select__list(style='display: none;')
+                                li.select__item Puma
+                                li.select__item PumaCL
+                                li.select__item PumaSP
+                .line
+                .brand
+                    .brand-title Person
+                    .brand-choice
+                        .select
+                            input.select__input(type='hidden')
+                            .select__head man
+                            ul.select__list(style='display: none;')
+                                li.select__item man
+                                li.select__item girl
+                                li.select__item child
+                .line
+                .brand
+                    .brand-title Size   
+                    .brand-choice
+                        .select
+                            input.select__input(type='hidden')
+                            .select__head XS
+                            ul.select__list(style='display: none;')
+                                li.select__item XS
+                                li.select__item S
+                                li.select__item M
+                                li.select__item L
+                                li.select__item XL
+                .line
+                .brand
+                    .brand-title Price
+                    .brand-choice
+                        .select
+                            input.select__input(type='hidden')
+                            .select__head <150$
+                            ul.select__list(style='display: none;')
+                                li.select__item <150$
+                                li.select__item ~150%
+                                li.select__item >150$
+                .line
+                .brand-button
+                    button.brand-btn(type='submit', data-bs-toggle='modal', data-bs-target='#exampleModal') Buy now

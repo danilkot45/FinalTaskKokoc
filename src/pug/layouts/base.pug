@@ -1,0 +1,35 @@
+block variables
+include ../mixins/mainSlider
+
+doctype html
+html(lang="ru")
+    include ../blocks/head
+    body
+        .modal.fade#exampleModal(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        p.modal-title#exampleModalLabel Обратная связь
+                        button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                    .modal-body
+                        form.row.g-3.needs-validation(action='index.html', method='get' novalidate)
+                            .col-md-6
+                                label.form-label(for='validationCustom01') Имя
+                                input.form-control#validationCustom01(type='text', placeholder='Ваше имя', required)
+                                .valid-feedback Отлично!
+                            .col-md-6
+                                label.form-label(for='validationCustom02') Телефон
+                                input.form-control#validationCustom02(type='tel', pattern='[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}', placeholder='+79123456789', required)
+                                .valid-feedback Отлично!  
+                            .col-md-12
+                                label.form-label(for='validationCustomUsername') Email
+                                .input-group.has-validation
+                                    span.input-group-text#inputGroupPrepend @
+                                    input.form-control#validationCustomUsername(type='email', aria-describedby='inputGroupPrepend', required)
+                                    .invalid-feedback Пожалуйста,введите вашу почту.
+                            .col-12
+                                button.btn.btn-primary(type='submit' onclick="Form()") Отправить форму
+        block header
+        main.main
+            block main
+        block footer        

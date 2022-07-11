@@ -1,0 +1,14 @@
+include ../mixins/mainSlider
+
+section.gallary
+  .block-two-title(style="margin-left:15px")
+      h3(style="text-align:left;margin-top: 0px;margin-left: 0px;margin-bottom: 11px;") GALLARY
+      h2(style="text-align:left;margin-bottom: 20px;") 40+ YEARS’ EXPERIENCE
+  .gallary__categories.gallary-category
+    .gallary-category__title Categories:
+    ul.gallary-category-items
+      li.gallary-category-items__item All
+      li.gallary-category-items__item Male
+      li.gallary-category-items__item Female
+      li.gallary-category-items__item Kids
+  +sliderGallary(['images/sneaker2.png', 'Puma RS-X Bold', 'Dubble-XL', '$200'],['images/sneaker3.png', 'Puma Sneakers', 'Dubble-XL', '$180'],['images/sneaker4.png', 'Puma Ferrari', 'Dubble-XL', '$190'],['images/sneaker5.png', 'Puma Running', 'Dubble-XL', '$200'],['images/sneaker2.png', 'Puma RS-X Bold', 'Dubble-XL', '$200'],['images/sneaker3.png', 'Puma Sneakers', 'Dubble-XL', '$180'],['images/sneaker4.png', 'Puma Ferrari', 'Dubble-XL', '$190'],['images/sneaker5.png', 'Puma Running', 'Dubble-XL', '$200'])
